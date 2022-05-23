@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Isabella Maguire",
+        "review": "5",
+        "location": "London",
+        "img": "https://i.ibb.co/dJk1std/people2.png",
+        "description": "Absoluetly spot on! Always providing me with cutting edge tools that have been helping me for years now with my work"
+    },
+    {
+        "name": "Winson Harry",
+        "review": "4.5",
+        "location": "California",
+        "img": "https://i.ibb.co/92xxYns/people1.png",
+        "description": "Near perfect. Other than one miscommunication instance, I have never been disappointed by these lovely fellas."
+    },
+    {
+        "name": "Stacey Lee",
+        "review": "5",
+        "location": "Melbourne",
+        "img": "https://i.ibb.co/Mfy3fz9/people3.png",
+        "description": "Love their service. Always on time and never leaves any room for complaints. Much recommended!!"
+    }
+]
