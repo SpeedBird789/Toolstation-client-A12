@@ -1,0 +1,57 @@
+[
+    {
+      "_id": 1,
+      "name": "Soldering Iron",
+      "description": "BST-102D temperature controlled soldering iron ceramic heaters portable soldering gun iron...",
+      "minOrder": 40,
+      "availableQuantity": 150,
+      "price": 21,
+      "img": "https://i.ibb.co/4fK09Rm/soldering-Iron.jpg"
+    },
+    {
+      "_id": 2,
+      "name": "Bicycle Pump",
+      "description": "CO2 Inflator Bicycle Pump Mini Hand Bike Pump Mountain Road Cycling Accessories Bicycle Tire Repair Kit...",
+      "minOrder": 35,
+      "availableQuantity": 120,
+      "price": 14,
+      "img": "https://i.ibb.co/1K8CyBv/pump.jpg"
+    },
+    {
+      "_id": 3,
+      "name": "Ring Wrench",
+      "description": "Wholesale Flex-Head Double Box End Ratcheting Wrench 72T Double Ring Ratchet Spanner Flexible Wrench Tool...",
+      "minOrder": 45,
+      "availableQuantity": 250,
+      "price": 24,
+      "img": "https://i.ibb.co/vJhZHRk/ring-Wrench.jpg"
+    },
+    {
+      "_id": 4,
+      "name": "Electric Screwdriver",
+      "description": "GOLDMOON cordless mini electric screwdriver power tool sets drill power screw drivers...",
+      "minOrder": 25,
+      "availableQuantity": 165,
+      "price": 32,
+      "img": "https://i.ibb.co/P19ML0f/screwdriver.jpg"
+    },
+    {
+      "_id": 5,
+      "name": "Hammer Drill",
+      "description": "INNO Upgraded 1100W Hammer Drill, Rotary Hammer Drill With Battery Life For A Long Time...",
+      "minOrder": 70,
+      "availableQuantity": 750,
+      "price": 27,
+      "img": "https://i.ibb.co/yY44Bxt/hammer-Drill.jpg"
+    },
+    {
+      "_id": 6,
+      "name": "Claw Hammer",
+      "description": "Fiber handle claw hammer percussion for construction, minimum order iron hammer...",
+      "minOrder": 60,
+      "availableQuantity": 350,
+      "price": 7,
+      "img": "https://i.ibb.co/Q65PyNm/hammer.jpg"
+    }
+    
+  ]
