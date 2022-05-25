@@ -1,7 +1,13 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const Tool = ({tool}) => {
-    const {name, img, price, description, minOrder, availableQuantity} = tool;
+    const {_id, name, img, price, description, minOrder, availableQuantity} = tool;
+    const navigate = useNavigate();
+
+    const navigateToToolDetail = _id =>{
+        navigate(`/tool/${_id}`);
+    }
 
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -15,7 +21,7 @@ const Tool = ({tool}) => {
                 <p>Minimum Order: {minOrder}</p>
                 <p>${price}/unit</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button onClick={() => navigateToToolDetail(_id)} className="btn btn-primary">Place Order</button>
                 </div>
             </div>
         </div>

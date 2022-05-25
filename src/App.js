@@ -7,6 +7,8 @@ import Footer from './Pages/Shared/Footer';
 import Login from './Pages/Login/Login';
 import Blogs from './Pages/Blogs/Blogs';
 import SignUp from './Pages/Login/SignUp';
+import ToolDetail from './Pages/Home/ToolDetail';
+import RequireAuth from '../src/Pages/Login/RequireAuth';
 
 function App() {
   return (
@@ -14,6 +16,11 @@ function App() {
     <Navbar></Navbar>
     <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/tool/:_id' element={
+          <RequireAuth>
+             <ToolDetail></ToolDetail>
+          </RequireAuth>
+        }></Route>
         <Route path="myportfolio" element={<MyPortfolio />} />
         <Route path="blogs" element={<Blogs />} />
         <Route path='login' element={<Login></Login>}></Route>

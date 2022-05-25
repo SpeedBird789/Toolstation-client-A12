@@ -37,8 +37,7 @@ const SignUp = () => {
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-        console.log('update done');
-        navigate('/appointment');
+        navigate('/');
     }
     return (
         <div className='flex h-screen justify-center items-center'>
@@ -123,7 +122,7 @@ const SignUp = () => {
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
-                        className="btn btn-outline"
+                        className="btn btn-outline btn-success"
                     >Continue with Google</button>
                 </div>
             </div>
