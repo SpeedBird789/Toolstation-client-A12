@@ -12,8 +12,8 @@ const Home = () => {
             <Banner></Banner>
             <div className='px-20'>
             <Tools></Tools>
-            <Testimonials></Testimonials>
             <BusinessSummary></BusinessSummary>
+            <Testimonials></Testimonials>
             </div>
             <Newsletter></Newsletter>
         </div>

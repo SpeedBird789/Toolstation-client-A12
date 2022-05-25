@@ -1,35 +1,14 @@
 import React from 'react';
-import AnimatedNumbers from "react-animated-numbers";
 
 const BusinessSummary = () => {
-    const [num, setNum] = React.useState(331231);
     return (
-        <div className="container">
-        <AnimatedNumbers
-          includeComma
-          animateToNumber={num}
-          fontStyle={{ fontSize: 40 }}
-          configs={[
-            { mass: 1, tension: 220, friction: 100 },
-            { mass: 1, tension: 180, friction: 130 },
-            { mass: 1, tension: 280, friction: 90 },
-            { mass: 1, tension: 180, friction: 135 },
-            { mass: 1, tension: 260, friction: 100 },
-            { mass: 1, tension: 210, friction: 180 },
-          ]}
-        ></AnimatedNumbers>
-  
-        <AnimatedNumbers
-          animateToNumber={num}
-          fontStyle={{ fontSize: 32 }}
-          configs={(number, index) => {
-            return { mass: 1, tension: 230 * (index + 1), friction: 140 };
-          }}
-        ></AnimatedNumbers>
-        <div>
-          <button onClick={() => setNum((state) => state + 31234)}>+</button>
-          <button onClick={() => setNum((state) => state - 31234)}>-</button>
-        </div>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+        
+        <div className='font-bold text-5xl text-center'>19K <br /><span className='text-2xl'>CUSTOMERS</span> <div class="divider lg:divider-horizontal"></div> </div>
+        <div className='font-bold text-5xl text-center'>144K <br /><span className='text-2xl'>ITEMS SOLD</span> <div class="divider lg:divider-horizontal"></div> </div>
+        <div className='font-bold text-5xl text-center'>150+ <br /><span className='text-2xl'>PARTNERS</span> <div class="divider lg:divider-horizontal"></div> </div>
+        <div className='font-bold text-5xl text-center'>4K <br /><span className='text-2xl'>REVIEWS</span> <div class="divider lg:divider-horizontal"></div> </div>
+      
       </div>
     );
 };
