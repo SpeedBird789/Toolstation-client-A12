@@ -9,6 +9,8 @@ import Blogs from './Pages/Blogs/Blogs';
 import SignUp from './Pages/Login/SignUp';
 import ToolDetail from './Pages/Home/ToolDetail';
 import RequireAuth from '../src/Pages/Login/RequireAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
         <Route path='signup' element={<SignUp></SignUp>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

@@ -16,11 +16,11 @@ const Review = ({review}) => {
                     <p>{review.description}</p>
                     <div>
                     <div className="rating mt-2">
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />                
+                        <input type="radio" name="rating-1" className="mask mask-star" />
+                        <input type="radio" name="rating-1" className="mask mask-star" />
+                        <input type="radio" name="rating-1" className="mask mask-star" />
+                        <input type="radio" name="rating-1" className="mask mask-star" />
+                        <input type="radio" name="rating-1" className="mask mask-star" />                
                     </div>
                     </div>
                 </div>
