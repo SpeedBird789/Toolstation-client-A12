@@ -63,6 +63,8 @@ const ToolDetail = ({ tools, setTools }) => {
                     <input className='mb-3 input input-bordered w-full max-w-xs' placeholder='Email'  value={user?.email || ''} {...register("email")} />
                     <input className='mb-3 input input-bordered w-full max-w-xs' placeholder='Address' {...register("address")} />
                     <input className='mb-3 input input-bordered w-full max-w-xs' placeholder='Phone Number' {...register("phone")} />
+                    <label>Enter the name of this tool:</label>
+                    <input className='mb-3 input input-bordered w-full max-w-xs' placeholder='Tool Name' type="text" {...register("toolName")} />
                     <label>Enter the price of this tool ($):</label>
                     <input className='mb-3 input input-bordered w-full max-w-xs' placeholder='Price' type="number" {...register("price")} />
                     <input className='mb-3 input input-bordered w-full max-w-xs' placeholder='Order Quantity' type="number" {...register("quantity")} />

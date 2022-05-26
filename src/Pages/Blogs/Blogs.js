@@ -6,6 +6,7 @@ const Blogs = () => {
             <div className='text-center text-4xl text-ellipsis font-sans font-bold text-pink-500'>Blogs Section</div>
             <div className="divider"></div> 
             <div className="accordion" id="accordionExample">
+              
   <div className="accordion-item bg-white bg-green-50 border border-gray-300 mb-4 rounded-xl">
     <h2 className="accordion-header mb-0" id="headingOne">
       <button className="
@@ -72,12 +73,9 @@ const Blogs = () => {
     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
       data-bs-parent="#accordionExample">
       <div className="accordion-body py-4 px-5">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
+      Some ways to manage a state in a React application: <br />
+      1. Local (UI) state: Local state is data we manage in one or another component. Local state is most often managed in React using the useState hook. <br />
+      2. Global (UI) state: Global state is data we manage across multiple components.
       </div>
     </div>
   </div>
@@ -110,6 +108,7 @@ const Blogs = () => {
       data-bs-parent="#accordionExample">
       <div className="accordion-body py-4 px-5">
        Protoypical inheritance is a method by which an object can inherit the properties and methods of another object. It allows us to reuse the properties or methods from one JavaScript object to another through a reference pointer function.
+       Traditionally, in order to get and set the [Prototype] of an object, we use Object.getPrototypeOf and Object.setPrototypeOf.
       </div>
     </div>
   </div>
@@ -135,18 +134,13 @@ const Blogs = () => {
         font-bold
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
         aria-controls="collapseThree">
-        You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?
+        Why do we not set the state directly in React?
       </button>
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
       data-bs-parent="#accordionExample">
       <div className="accordion-body py-4 px-5">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
+      Directly modifying state is not recommended as react will not come to know of the change and it will not cause a rerender. All the diffing happens on Virtual DOM and react only updates the change attributes to Browser. When we update the state of a component all its children get rendered as well. But when we say our entire component tree is rendered that doesn’t mean that the entire DOM is updated. When a component is rendered we basically get a react element, so that is updating our virtual dom. React will then look at the virtual DOM, it also has a copy of the old virtual DOM, that is why we shouldn’t set the state directly in React.
       </div>
     </div>
   </div>
