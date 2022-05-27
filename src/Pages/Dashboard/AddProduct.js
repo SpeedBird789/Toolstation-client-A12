@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useQuery } from 'react-query';
+import { toast } from 'react-toastify';
 import Loading from '../Shared/Loading';
 
 const AddProduct = () => {
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
     const {data: tools, isLoading} = useQuery('tools', () => fetch('http://localhost:5000/tool').then(res=>res.json()))
 
@@ -26,11 +27,30 @@ const AddProduct = () => {
                const product = {
                 name: data.name,
                 description: data.description,
-                availableQuanity: data.availableQuanity,
+                availableQuantity: data.availableQuantity,
                 minOrder: data.minOrder,
+                price: data.price,
                 img: img
             }
             // Sending to our database
+            fetch('http://localhost:5000/tool', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                },
+                body: JSON.stringify(product)
+            })
+            .then(res =>res.json())
+                .then(inserted =>{
+                    if(inserted.insertedId){
+                        toast.success('Product added successfully')
+                        reset();
+                    }
+                    else{
+                        toast.error('Failed to add the product');
+                    }
+                })
             
            }
        })
