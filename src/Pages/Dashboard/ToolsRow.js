@@ -26,15 +26,15 @@ const ToolsRow = ({ tool, index, refetch, setdeletingTool }) => {
     return (
         <tr>
             <th>{index + 1}</th>
-            <td><div class="avatar">
-                <div class="w-20 rounded">
+            <td><div className="avatar">
+                <div className="w-20 rounded">
                     <img src={img} alt={name} />
                 </div>
             </div></td>
             <td>{name}</td>
             <td>
-                <label onClick={()=> setdeletingTool(tool)} for="delete-confirm-modal" class="btn btn-xs btn-error">Delete</label>
-                {/* <button onClick={()=> handleDelete(name)} class="btn btn-xs btn-error">Delete</button> */}
+                <label onClick={()=> setdeletingTool(tool)} htmlFor="delete-confirm-modal" className="btn btn-xs btn-error">Delete</label>
+                {/* <button onClick={()=> handleDelete(name)} className="btn btn-xs btn-error">Delete</button> */}
             </td>
         </tr>
     );

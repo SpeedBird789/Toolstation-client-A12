@@ -19,6 +19,7 @@ import Users from './Pages/Dashboard/Users';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageTools from './Pages/Dashboard/ManageTools';
+import NotFound404 from './Pages/Others/NotFound404';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="blogs" element={<Blogs />} />
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound404></NotFound404>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>

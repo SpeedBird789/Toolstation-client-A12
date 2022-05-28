@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const useToken = user =>{
     const [token, setToken] = useState('');
     useEffect( () =>{
-        console.log('user inside useToken', user);
+        // console.log('user inside useToken', user);
         const email = user?.user?.email;
         const currentUser = {email: email};
         if(email){
@@ -16,7 +16,7 @@ const useToken = user =>{
             })
             .then(res=>res.json())
             .then(data => {
-                console.log('data inside useToken', data);
+                // console.log('data inside useToken', data);
                 const accessToken = data.token;
                 localStorage.setItem('accessToken', accessToken);
                 setToken(accessToken);
