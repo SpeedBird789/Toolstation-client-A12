@@ -91,7 +91,7 @@ const AddProduct = () => {
     <label className="label">
         <span className="label-text">Description</span>
     </label>
-    <input
+    <textarea
         type="text"
         placeholder="Tool Description"
         className="input input-bordered w-full max-w-xs"

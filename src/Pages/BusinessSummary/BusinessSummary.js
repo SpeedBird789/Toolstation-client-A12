@@ -2,7 +2,7 @@ import React from 'react';
 
 const BusinessSummary = () => {
     return (
-      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-slate-200 p-6'>
         
         <div className='font-bold text-5xl text-center'>12K+ <br /><span className='text-2xl'>CUSTOMERS</span> <div className="divider lg:divider-horizontal"></div> </div>
         <div className='font-bold text-5xl text-center'>3K+ <br /><span className='text-2xl'>TOOLS</span> <div className="divider lg:divider-horizontal"></div> </div>
