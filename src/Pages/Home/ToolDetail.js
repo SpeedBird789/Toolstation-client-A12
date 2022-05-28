@@ -16,7 +16,7 @@ const ToolDetail = ({ tools, setTools }) => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/order`;
+        const url = `https://immense-island-73172.herokuapp.com/order`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -33,7 +33,7 @@ const ToolDetail = ({ tools, setTools }) => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/tool/${_id}`;
+        const url = `https://immense-island-73172.herokuapp.com/tool/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTool(data));

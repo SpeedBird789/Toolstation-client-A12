@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const UserRow = ({user, refetch}) => {
     const {email, role} = user;
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://immense-island-73172.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -25,7 +25,7 @@ const UserRow = ({user, refetch}) => {
     }
     return (
         <tr>
-        <th>1</th>
+        {/* <th>1</th> */}
         <th>{email}</th>
         <td>{role !== 'admin' && <button onClick={makeAdmin} className="btn btn-xs">Make Admin</button>}</td>
         <td><button className="btn btn-xs">Remove user</button></td>

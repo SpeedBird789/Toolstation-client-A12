@@ -6,7 +6,7 @@ import ToolsRow from './ToolsRow';
 
 const ManageTools = () => {
     const [deletingTool, setdeletingTool] = useState(null);
-    const {data: tools, isLoading, refetch} = useQuery('tools', ()=> fetch('http://localhost:5000/tool', {
+    const {data: tools, isLoading, refetch} = useQuery('tools', ()=> fetch('https://immense-island-73172.herokuapp.com/tool', {
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

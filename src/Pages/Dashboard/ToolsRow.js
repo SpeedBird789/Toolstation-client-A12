@@ -5,7 +5,7 @@ const ToolsRow = ({ tool, index, refetch, setdeletingTool }) => {
     const { name, img } = tool;
 
     const handleDelete = name =>{
-        fetch(`http://localhost:5000/tool/${name}`, {
+        fetch(`https://immense-island-73172.herokuapp.com/tool/${name}`, {
             method: 'DELETE',
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

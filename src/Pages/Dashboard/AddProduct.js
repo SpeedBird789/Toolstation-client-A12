@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const {data: tools, isLoading} = useQuery('tools', () => fetch('http://localhost:5000/tool').then(res=>res.json()))
+    const {data: tools, isLoading} = useQuery('tools', () => fetch('https://immense-island-73172.herokuapp.com/tool').then(res=>res.json()))
 
     const imageStorageKey = '20c82070c04df14e6bfa8f49fdd61b5e';
 
@@ -33,7 +33,7 @@ const AddProduct = () => {
                 img: img
             }
             // Sending to our database
-            fetch('http://localhost:5000/tool', {
+            fetch('https://immense-island-73172.herokuapp.com/tool', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
