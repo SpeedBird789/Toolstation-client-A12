@@ -7,6 +7,7 @@ const Blogs = () => {
             <div className="divider"></div> 
             <div className="accordion" id="accordionExample">
               
+  <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
   <div className="accordion-item bg-white bg-green-50 border border-gray-300 mb-4 rounded-xl">
     <h2 className="accordion-header mb-0" id="headingOne">
       <button className="
@@ -101,7 +102,7 @@ const Blogs = () => {
         font-bold
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
         aria-controls="collapseThree">
-      How does prototypal inheritance work?
+      What is prototypal inheritance and how does it work?
       </button>
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -178,6 +179,7 @@ const Blogs = () => {
     Unit tests help with code re-use. Migrate both our code and our tests to our new project. They also tweak the code until the tests run again.
       </div>
     </div>
+  </div>
   </div>
 </div>
         </div>
