@@ -4,7 +4,7 @@ Visit the live site here:https://manufacturing-55d20.web.app/
 
 # About this project
 
-In this project, I tried to make a Tools manufacturer website. Due to time constraint, couldn't add a few more features and functionalities which I hope will implement once I sit with it again. To summarise:
+In this project, I tried to make a Tools manufacturer website. Due to time constraint, couldn't add a few more features and functionalities which I intend to implement once I sit with it again. To summarise:
 
 * One can place order clicking on the place order button from the tools displayed.
 * Shows the business summary (12k Customer, 3k tools etc) of the manufacturer.
