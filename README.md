@@ -10,5 +10,5 @@ In this project, I tried to make a Tools manufacturer website. Due to time const
 * Shows the business summary (12k Customer, 3k tools etc) of the manufacturer.
 * Testimonials where there are reviews given by its customers.
 * Blogs answers some of the basic questions (just for mu practice)
-* One can subscribe to their newsletter by providing their email addres.
+* One can subscribe to their newsletter by providing their email address.
 
