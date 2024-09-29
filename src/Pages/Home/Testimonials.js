@@ -6,11 +6,12 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://immense-island-73172.herokuapp.com/review')
+        fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/review')
         .then(res => res.json())
         .then(data => setReviews(data))
     })
 
+    
     return (
         <section className='my-28'>
         <div className='flex justify-between'>

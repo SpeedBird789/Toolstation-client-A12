@@ -16,7 +16,7 @@ const ToolDetail = ({ tools, setTools }) => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `https://immense-island-73172.herokuapp.com/order`;
+        const url = `https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/order`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -33,7 +33,7 @@ const ToolDetail = ({ tools, setTools }) => {
 
 
     useEffect(() => {
-        const url = `https://immense-island-73172.herokuapp.com/tool/${_id}`;
+        const url = `https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTool(data));

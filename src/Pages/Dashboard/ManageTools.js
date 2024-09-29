@@ -6,7 +6,7 @@ import ToolsRow from './ToolsRow';
 
 const ManageTools = () => {
     const [deletingTool, setdeletingTool] = useState(null);
-    const {data: tools, isLoading, refetch} = useQuery('tools', ()=> fetch('https://immense-island-73172.herokuapp.com/tool', {
+    const {data: tools, isLoading, refetch} = useQuery('tools', ()=> fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool', {
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

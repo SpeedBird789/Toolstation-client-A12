@@ -12,7 +12,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://immense-island-73172.herokuapp.com/order?email=${user.email}`, {
+            fetch(`https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/order?email=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
