@@ -16,7 +16,7 @@ const ToolDetail = ({ tools, setTools }) => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/order`;
+        const url = `${process.env.REACT_APP_BASE_URL}/order`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -33,7 +33,7 @@ const ToolDetail = ({ tools, setTools }) => {
 
 
     useEffect(() => {
-        const url = `https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool/${_id}`;
+        const url = `${process.env.REACT_APP_BASE_URL}/tool/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTool(data));

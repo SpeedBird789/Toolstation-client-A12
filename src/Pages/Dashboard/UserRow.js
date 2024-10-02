@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const UserRow = ({user, refetch}) => {
     const {email, role} = user;
     const makeAdmin = () => {
-        fetch(`https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/user/admin/${email}`, {
+        fetch(`${process.env.REACT_APP_BASE_URL}/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

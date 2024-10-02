@@ -5,7 +5,7 @@ const Tools = () => {
     const [tools, setTools] = useState([]);
 
     useEffect(() => {
-        fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool')
+        fetch(`${process.env.REACT_APP_BASE_URL}/tool`)
         .then(res => res.json())
         .then(data => setTools(data))
     })

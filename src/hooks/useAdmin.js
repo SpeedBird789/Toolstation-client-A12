@@ -6,7 +6,7 @@ const useAdmin = user => {
     useEffect( () =>{
         const email = user?.email;
         if(email){
-            fetch(`https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/admin/${email}`, {
+            fetch(`${process.env.REACT_APP_BASE_URL}/admin/${email}`, {
                 method:'GET',
                 headers: {
                     'content-type': 'application/json',

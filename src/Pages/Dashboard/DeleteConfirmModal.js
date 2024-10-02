@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteConfirmModal = ({deletingTool, setdeletingTool, refetch}) => {
     const {name} = deletingTool;
     const handleDelete = name =>{
-        fetch(`https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool/${name}`, {
+        fetch(`${process.env.REACT_APP_BASE_URL}/tool/${name}`, {
             method: 'DELETE',
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch(`${process.env.REACT_APP_BASE_URL}/user`, {
         method: 'GET',
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const {data: tools, isLoading} = useQuery('tools', () => fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool').then(res=>res.json()))
+    const {data: tools, isLoading} = useQuery('tools', () => fetch(`${process.env.REACT_APP_BASE_URL}/tool`).then(res=>res.json()))
 
     const imageStorageKey = '20c82070c04df14e6bfa8f49fdd61b5e';
 
@@ -33,7 +33,7 @@ const AddProduct = () => {
                 img: img
             }
             // Sending to our database
-            fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/tool', {
+            fetch(`${process.env.REACT_APP_BASE_URL}/tool`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

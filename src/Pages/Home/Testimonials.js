@@ -6,7 +6,7 @@ const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://toolstation-server-a12-ve89a8ziv-asif-mahmouds-projects.vercel.app/review')
+        fetch(`${process.env.REACT_APP_BASE_URL}/review`)
         .then(res => res.json())
         .then(data => setReviews(data))
     })
