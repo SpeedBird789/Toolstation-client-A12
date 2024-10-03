@@ -8,7 +8,8 @@ ToolStation is a full-stack website built to simulate a tools manufacturing comp
 
 ## Features
 
-- **Order Placement**: Users can browse through available tools and place an order by clicking on the 'Place Order' button.
+- **Order Placement**: Users can browse through available tools and place an order by clicking on the 'Place Order' button. This can then be managed in the Dashboard section (only accessible after logging in and placing an order) ![Dashboard Section](https://i.ibb.co/85qb9yZ/Dashboard-TS.png)
+
 - **Business Summary**: A section displaying key metrics of the business, such as the number of customers, tools, and orders processed.
 - **Testimonials**: A section featuring customer reviews to build trust and credibility.
 - **Blogs**: Answers to some basic questions in web dev (this is mainly for my own revision).
