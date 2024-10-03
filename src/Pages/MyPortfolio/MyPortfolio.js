@@ -6,10 +6,6 @@ const MyPortfolio = () => {
         <div className='bg-slate-100 pt-5 pb-36'>
            <div className='ml-8 font-serif'>
            Hi, <span className='text-2xl font-bold'>SpeedBird</span> here.
-           <br /> 
-           Email: speedbird71@gmail.com
-           <br />
-           Education: Never got the opportunity to go to school
            <br />
            So far, I've learned:
            <li className='mt-4'>HTML</li>
